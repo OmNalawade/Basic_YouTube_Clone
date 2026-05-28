@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CATEGORY CHIPS -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="All"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/bg_music_box"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Music"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/bg_top_bar"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="News"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/bg_top_bar"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Live"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/bg_top_bar"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="AI"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/bg_top_bar"
+                        android:layout_marginEnd="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="Movies"
+                        android:gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:paddingHorizontal="16dp"
+                        android:background="@drawable/bg_top_bar"/>
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- VIDEO THUMBNAIL -->
+            <FrameLayout
+                android:id="@+id/video_frame_1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="#CCCCCC"/>
+
+            <!-- VIDEO INFO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <View
+
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="#999999"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gada Electronics Ki Nayi Scheme | Taarak Mehta Ka Ooltah Chashmah | Full Episode 4521"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sony SAB • 3.6M views •  3 months ago"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!-- SHORTS TITLE -->
+
+
+            <!-- SHORTS PLACEHOLDER -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/youtube_shorts" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Shorts"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <FrameLayout
+                        android:id="@+id/shorts_frame_1"
+                        android:layout_width="140dp"
+                        android:layout_height="260dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#000000"
+                        android:clipToOutline="true"/>
+
+                    <FrameLayout
+                        android:id="@+id/shorts_frame_2"
+                        android:layout_width="140dp"
+                        android:layout_height="260dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#000000"
+                        android:clipToOutline="true"/>
+
+                    <FrameLayout
+                        android:id="@+id/shorts_frame_3"
+                        android:layout_width="140dp"
+                        android:layout_height="260dp"
+                        android:background="#000000"
+                        android:clipToOutline="true"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@+id/video_frame_2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="#CCCCCC"/>
+
+            <!-- VIDEO INFO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <View
+
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="#999999"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="KAUN TUJHE Lyrical | M.S. DHONI -THE UNTOLD STORY | Amaal Mallik Palak | Sushant Singh Disha Patani"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="T-Series • 760M views •  9 years ago"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/video_frame_3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="#CCCCCC"/>
+
+            <!-- VIDEO INFO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <View
+
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="#999999"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Motu Patlu | मोटू पतलू S1 | Dr. Jhatka Ki Fighting Machine | Episode 241 Part 2 | Voot Kids"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:maxLines="2"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="JioHotstar Kids • 25M views •  4 years ago"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/video_frame_4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="#CCCCCC"/>
+
+            <!-- VIDEO INFO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <View
+
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="#999999"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SHOORVEER 3 - A Tribute to छत्रपति शिवाजी महाराज | Rapperiya Baalam Ft. Shambho I Meetu Solanki"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rapperiya Baalam • 198M views •  3 years ago"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/video_frame_5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="#CCCCCC"/>
+
+            <!-- VIDEO INFO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <View
+
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="#999999"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="295 (Official Audio) | Sidhu Moose Wala | The Kidd | Moosetape"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:maxLines="2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sidhu Moose Wala • 720M views •  4 years ago"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
